@@ -29,14 +29,14 @@ namespace FizzBuzzTest
                     continue;
                 }
 
-                Assert.Equal(string.Empty, handler.GetHandleResult(1 * i));
-                Assert.Equal(string.Empty, handler.GetHandleResult(2 * i));
-                Assert.Equal(string.Empty, handler.GetHandleResult(3 * i));
-                Assert.Equal(string.Empty, handler.GetHandleResult(4 * i));
-                Assert.Equal(string.Empty, handler.GetHandleResult(6 * i));
-                Assert.Equal(string.Empty, handler.GetHandleResult(7 * i));
-                Assert.Equal(string.Empty, handler.GetHandleResult(8 * i));
-                Assert.Equal(string.Empty, handler.GetHandleResult(9 * i));
+                Assert.Equal((1 * i).ToString(), handler.GetHandleResult(1 * i));
+                Assert.Equal((2 * i).ToString(), handler.GetHandleResult(2 * i));
+                Assert.Equal((3 * i).ToString(), handler.GetHandleResult(3 * i));
+                Assert.Equal((4 * i).ToString(), handler.GetHandleResult(4 * i));
+                Assert.Equal((6 * i).ToString(), handler.GetHandleResult(6 * i));
+                Assert.Equal((7 * i).ToString(), handler.GetHandleResult(7 * i));
+                Assert.Equal((8 * i).ToString(), handler.GetHandleResult(8 * i));
+                Assert.Equal((9 * i).ToString(), handler.GetHandleResult(9 * i));
             }
         }
 

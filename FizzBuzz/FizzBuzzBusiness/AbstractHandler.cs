@@ -23,7 +23,7 @@ namespace FizzBuzzBusiness
                 return HandleResult(number);
             }
 
-            return nextHandler == null ? string.Empty : nextHandler.GetHandleResult(number);
+            return nextHandler == null ? number.ToString() : nextHandler.GetHandleResult(number);
         }
 
         protected abstract bool CanCurrentHandle(int number);

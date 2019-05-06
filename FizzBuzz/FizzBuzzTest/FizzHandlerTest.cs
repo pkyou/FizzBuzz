@@ -20,7 +20,7 @@ namespace FizzBuzzTest
         }
 
         [Fact]
-        public void ShouldReturnNull()
+        public void ShouldReturnNumber()
         {
             Assert.Equal(string.Empty,handler.GetHandleResult(0));
             Assert.Equal(string.Empty,handler.GetHandleResult(-6));
@@ -31,12 +31,12 @@ namespace FizzBuzzTest
                     continue;
                 }
                 
-                Assert.Equal(string.Empty,handler.GetHandleResult(1 * i));
-                Assert.Equal(string.Empty,handler.GetHandleResult(2 * i));
-                Assert.Equal(string.Empty,handler.GetHandleResult(4 * i));
-                Assert.Equal(string.Empty,handler.GetHandleResult(5 * i));
-                Assert.Equal(string.Empty,handler.GetHandleResult(7 * i));
-                Assert.Equal(string.Empty,handler.GetHandleResult(8 * i));
+                Assert.Equal((1 * i).ToString(),handler.GetHandleResult(1 * i));
+                Assert.Equal((2 * i).ToString(),handler.GetHandleResult(2 * i));
+                Assert.Equal((4 * i).ToString(),handler.GetHandleResult(4 * i));
+                Assert.Equal((5 * i).ToString(),handler.GetHandleResult(5 * i));
+                Assert.Equal((7 * i).ToString(),handler.GetHandleResult(7 * i));
+                Assert.Equal((8 * i).ToString(),handler.GetHandleResult(8 * i));
             }
             
         }

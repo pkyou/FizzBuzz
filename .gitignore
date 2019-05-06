@@ -6,6 +6,8 @@ FizzBuzz/.idea/
 */obj/
 FizzBuzz/FizzBuzzBusiness/obj/
 FizzBuzz/FizzBuzzTest/obj/
+FizzBuzz/FizzBuzzConsole/obj/
 FizzBuzz/packages/
 FizzBuzz/FizzBuzzBusiness/bin/
 FizzBuzz/FizzBuzzTest/bin/
+FizzBuzz/FizzBuzzConsole/bin/
