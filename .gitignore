@@ -5,3 +5,5 @@ Desktop.ini
 FizzBuzz/.idea/
 */obj/
 FizzBuzz/FizzBuzzBusiness/obj/
+FizzBuzz/FizzBuzzTest/obj/
+FizzBuzz/packages/
