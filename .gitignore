@@ -1,0 +1,7 @@
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
+FizzBuzz/.idea/
+*/obj/
+FizzBuzz/FizzBuzzBusiness/obj/
