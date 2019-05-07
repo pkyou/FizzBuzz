@@ -53,7 +53,7 @@
   <ItemGroup>
     <Compile Include="BuzzHandlerTest.cs" />
     <Compile Include="FizzHandlerTest.cs" />
-    <Compile Include="Tests.cs" />
+    <Compile Include="FizzBuzzHandlerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

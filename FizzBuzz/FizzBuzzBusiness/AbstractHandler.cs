@@ -4,7 +4,7 @@ namespace FizzBuzzBusiness
 {
     public abstract class AbstractHandler
     {
-        protected AbstractHandler nextHandler;
+        private AbstractHandler nextHandler;
 
         public void SetNextHandler(AbstractHandler handler)
         {

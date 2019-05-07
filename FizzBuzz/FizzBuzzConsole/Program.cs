@@ -8,12 +8,14 @@ namespace FizzBuzzConsole
         {
             AbstractHandler buzzHandler = new BuzzHandler();
             AbstractHandler fizzHandler = new FizzHandler();
+            AbstractHandler fizzBuzzHandler = new FizzBuzzHandler();
             
+            fizzBuzzHandler.SetNextHandler(buzzHandler);
             buzzHandler.SetNextHandler(fizzHandler);
 
-            for (int i = 0; i < 100; i++)
+            for (var i = 0; i < 100; i++)
             {
-                System.Console.WriteLine(buzzHandler.GetHandleResult(i));
+                System.Console.WriteLine(fizzBuzzHandler.GetHandleResult(i));
             }
         }
     }
