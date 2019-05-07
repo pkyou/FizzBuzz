@@ -9,36 +9,20 @@ namespace FizzBuzzTest
         private string fizzString = "Fizz";
         
         [Fact]
-        public void ShouldReturnFizz()
+        public void FizzResultTest()
         {
-            for (var i = 1; i < 40; i++)
+            for (var i = 1; i < 101; i++)
             {
-                Assert.Equal(fizzString,handler.GetHandleResult(3 * i));
-                Assert.Equal(fizzString,handler.GetHandleResult(6 * i));
-                Assert.Equal(fizzString,handler.GetHandleResult(9 * i));
-            }
-        }
-
-        [Fact]
-        public void ShouldReturnNumber()
-        {
-            Assert.Equal(string.Empty,handler.GetHandleResult(0));
-            Assert.Equal(string.Empty,handler.GetHandleResult(-6));
-            for (var i = 1; i < 40; i++)
-            {
-                if (i % 3 == 0)
+                if (i % 3 == 0 || i.ToString().Contains("3"))
                 {
-                    continue;
+                    Assert.Equal(fizzString,handler.GetHandleResult(i));
                 }
-                
-                Assert.Equal((1 * i).ToString(),handler.GetHandleResult(1 * i));
-                Assert.Equal((2 * i).ToString(),handler.GetHandleResult(2 * i));
-                Assert.Equal((4 * i).ToString(),handler.GetHandleResult(4 * i));
-                Assert.Equal((5 * i).ToString(),handler.GetHandleResult(5 * i));
-                Assert.Equal((7 * i).ToString(),handler.GetHandleResult(7 * i));
-                Assert.Equal((8 * i).ToString(),handler.GetHandleResult(8 * i));
+                else
+                {
+                    Assert.NotEqual(fizzString,handler.GetHandleResult(i));
+                    Assert.Equal(i.ToString(),handler.GetHandleResult(i));
+                }
             }
-            
         }
     }
 }

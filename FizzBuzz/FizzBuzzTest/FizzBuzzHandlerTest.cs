@@ -11,24 +11,19 @@ namespace FizzBuzzTest
         [Fact]
         public void ShouldReturnFizzBuzz()
         {
-            for (var i = 1; i < 40; i++)
-            {
-                Assert.Equal(fizzString,handler.GetHandleResult(3*5*i));
-            }
-        }
-
-        [Fact]
-        public void ShouldNotReturnFizzBuzz()
-        {
-            for (var i = 1; i < 100; i++)
+            for (var i = 1; i < 101; i++)
             {
                 if (i % 3 == 0 && i % 5 == 0)
                 {
-                    continue;
+                    Assert.Equal(fizzString,handler.GetHandleResult(i));
                 }
-
-                Assert.NotEqual(fizzString, handler.GetHandleResult(i));
+                else
+                {
+                    Assert.NotEqual(fizzString,handler.GetHandleResult(i));
+                    Assert.Equal(i.ToString(),handler.GetHandleResult(i));
+                }
             }
         }
+        
     }
 }
